@@ -1,23 +1,52 @@
 aid: covalynt
+
 name: Covalynt
-description: 'Covalynt is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Covalynt is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub
+  for full-pipeline profiling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/covalynt/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-11 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-11'
+
 modified: '2026-10-11'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/covalynt-hosts.yml
+- type: Vendors
+  url: vendors/covalynt-vendors.yml
+- type: DomainSecurity
+  url: security/covalynt-domain-security.yml
 - type: Website
   url: https://www.nasdaqprivatemarket.com/
+
+apis:
+- name: Covalynt API
+  description: Covalynt provides identity solutions for class actions, mass torts, and mass arbitrations.
+  humanURL: https://www.covalynt.com
+  aid: covalynt:covalynt-api
+x-enrichment:
+  date: '2026-10-11'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

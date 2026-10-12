@@ -37,8 +37,7 @@ common:
 - type: DomainSecurity
   url: security/covalynt-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
-
+  url: https://www.covalynt.com
 apis:
 - name: Covalynt API
   description: Covalynt provides identity solutions for class actions, mass torts, and mass arbitrations.
